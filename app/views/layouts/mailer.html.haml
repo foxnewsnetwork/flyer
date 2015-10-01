@@ -1,0 +1,32 @@
+%hmtl
+  %head
+    = stylesheet_link_tag 'application'
+  %body
+    %table.row
+      %tr
+        %td.brand
+          %img.logo{ src: "http://i.imgur.com/EyE4aag.png" }
+          .company-name
+            Harbor Green Group - Gateway Logistics
+      %tr
+        %td.nav-links
+          %a.nav-link{ href: "http://www.harborgreengroup.com" } Harbor Web
+          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/grain" } Grain
+          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/gateway" } Gateway
+          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/recycle" } Recycle
+      %tr
+        %td.contents
+          = yield
+      %tr
+        %td.footer
+          .prompt need more assistance? contact our agents...
+          .infos
+            %span.info Mel Dones
+            %span.info 7300 Alondra BLVD #200
+            %span.info Paramount, CA 90723
+            %span.info Mobile (424) 381 3254
+            %span.info Office  (424) 731 9679
+      %tr
+        %td.copyright
+          Gateway Logistics LLC., copyright 2015
+          %a.unsubscribe{ href: "http://www.harborgreengroup.com/unsubscribe" } unsubscribe

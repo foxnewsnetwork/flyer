@@ -1,0 +1,18 @@
+%table.call-to-action
+  %tr
+    %td
+      .slogan 
+        %span.underline your gateway to globalization
+      .catchphrase All your logistics needs in the Southern California area
+
+%table.advertisements
+  - @services.each do |service|
+    %tr.media
+      %td.media-contents
+        %ul
+          %li.title= service.name
+          %li.benefit= service.summary
+          %li.actions
+            %a.action{ href: service.link } learn more
+      %td.media-image
+        %img{ src: service.pic }
