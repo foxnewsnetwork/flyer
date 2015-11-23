@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Business Card
+    = stylesheet_link_tag 'cards', media: 'all'
+    = csrf_meta_tags
+  %body
+    .paper.container
+      - 5.times do
+        .row
+          - 2.times do
+            .col-lg-6.col-md-6.col-sm-6.col-xs-6.card
+              = yield

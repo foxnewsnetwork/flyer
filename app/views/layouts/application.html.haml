@@ -1,0 +1,50 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Flyer
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .brand
+      .container
+        .company-brand
+          .center
+            %img.logo{ src: "http://i.imgur.com/EyE4aag.png" }
+            .company-name
+              Harbor Green - Gateway Logistics
+        .company-bs
+          .align-right
+            .slogan Your gateway to globalization
+            .catchphrase Your competitive advantage in Southern California
+    .action-links
+      .container
+        .row
+          .col-lg-12.actions
+            %span.action
+              %i.fa.fa-globe
+              www.gatewaylogosticsllc.com
+            %span.action
+              %i.fa.fa-phone
+              (424) 731 9679
+            %span.action
+              %i.fa.fa-envelope
+              maxx@gatewaylogisticsllc.com
+    .container
+      .row
+        #contents.col-lg-12
+          = yield
+      .row
+        .col-lg-12
+          %footer
+            .prompt need more assistance? contact our sales department...
+            .infos
+              %span.info Maxx Liu
+              %span.info 19100 S. Susana Rd
+              %span.info Compton, CA 90221
+              %span.info Mobile (424) 381 3254
+              %span.info Office  (424) 731 9679
+              %span.info Email maxx@gatewaylogisticsllc.com
+            .copyright
+              Gateway Logistics LLC., copyright 2015

@@ -1,0 +1,14 @@
+%ul.flyer-list
+  - @services.each do |service|
+    %li.flyer
+      .flyer-body
+        %h4.flyer-heading= service.name
+        %ul.flyer-contents
+          - service.points.each do |point|
+            %li.advantage= point
+      .flyer-right
+        %img.img-rounded{ src: service.pic }
+
+%blockquote
+  %p Future services: Pick and Pack, Domestics Cargo Planning/domestics routing, Transhipment
+  %p We are not a forwarder or agent of any logistics company, but only local service provider

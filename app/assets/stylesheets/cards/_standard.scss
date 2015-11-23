@@ -1,0 +1,56 @@
+.container.paper {
+  margin-top: 0.05in;
+  width: 7in;
+}
+
+.card {
+  height: 2in;
+  border: 1px dashed #aaa;
+}
+.print-media {
+  overflow: hidden;
+  margin-top: 0.1in;
+}
+.print-media-left {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+.print-media-body {
+  width: 10000px;
+  display: table-cell;
+  vertical-align: top;
+  margin-top: 0.1in;
+  text-align: right;
+  font-family: FontAwesome;
+}
+
+.logo {
+  width: 0.75in;
+  height: 0.75in;
+}
+
+.company {
+  font-size: 0.175in;
+  font-weight: bold;
+  color: #0d47a1;
+}
+.tagline {
+  font-size: 0.1in;
+}
+.fullname {
+  margin-top: 0.05in;
+  font-size: 0.15in;
+  color: #0d47a1;
+}
+.rank {
+  font-size: 0.1in;
+  margin-bottom: 0.05in;
+}
+.address {
+  font-size: 0.1in;
+}
+
+.contacts {
+  font-size: 0.125in;
+}

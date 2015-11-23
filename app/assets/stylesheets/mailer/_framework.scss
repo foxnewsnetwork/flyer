@@ -20,7 +20,7 @@ table {
     width: 300px;
   }
   .company-name {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #1b5e20;
   }
 }
@@ -144,6 +144,11 @@ table {
     display: inline-block;    
     padding-left: 0.2rem;
     padding-right: 0.2rem;
+    font-size: 0.8rem;
+  }
+  .afterthought {
+    margin-top: 0.2rem;
+    text-align: center;
     font-size: 0.8rem;
   }
 }

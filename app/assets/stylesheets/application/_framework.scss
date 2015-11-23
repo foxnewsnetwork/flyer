@@ -1,0 +1,109 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "compass";
+.brand {
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  background-color: #eceff1;
+  .logo {
+    width: 200px;
+  }
+  .align-left {
+    text-align: left;
+  }
+  .align-right {
+    text-align: right;
+  }
+  .company-name {
+    font-size: 18px;
+    color: #1b5e20;
+  }
+  .company-brand {
+    float: left;
+  }
+  .company-bs {
+    float: right;
+  }
+  .company-brand,
+  .company-bs {
+    height: 100px;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(flex-end);
+  }
+  .slogan {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+  }
+  .catchphrase {
+    font-size: 12px;
+  }
+}
+
+.action-links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #3e2723;
+  border-bottom: 1px solid #3e2723;
+  .actions {
+    @include display-flex;
+    @include justify-content(space-between);
+  }
+  .action {
+    display: inline-block;
+  }
+}
+
+#contents {
+  blockquote {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+    p {
+      margin: 0;
+    }
+    border-right: none;
+  }
+  .flyer-heading {
+    margin-top: 0;
+  }
+  .img-rounded {
+    width: 150px;
+    height: 120px;
+  }
+  ul.flyer-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li.flyer {
+    @include display-flex;
+    @include justify-content(space-between);
+    margin-bottom: 15px;
+    padding: 15px;
+    &:nth-child(even) {
+      background-color: #eee;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .flyer-heading {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .flyer-contents {
+    font-size: 12px;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+}

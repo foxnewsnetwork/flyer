@@ -1,0 +1,20 @@
+.blue-card
+  .first
+    .blue-company= @worker.company
+    .tagline= @worker.tagline
+
+  .second
+    .blue-fullname= @worker.fullname
+    .blue-rank= @worker.rank
+    .blue-website= @worker.company_site
+
+  .third
+    .info
+      %i.fa.fa-phone
+      %span= @worker.phone
+    .info
+      %i.fa.fa-envelope-square
+      %span= @worker.email
+    .info
+      %i.fa.fa-globe
+      %span= @worker.personal_site

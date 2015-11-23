@@ -1,0 +1,20 @@
+.print-media
+  .print-media-left
+    %img.logo{ src: "/assets/cards/recycle.png" }
+  .print-media-body
+    .company= @worker.company
+    .tagline= @worker.tagline
+    .fullname= @worker.fullname
+    .rank= @worker.rank
+    .address= @worker.address1
+    .address= @worker.address2
+.contacts
+  .info
+    %i.fa.fa-phone
+    %span= @worker.phone
+  .info
+    %i.fa.fa-envelope-square
+    %span= @worker.email
+  .info
+    %i.fa.fa-globe
+    %span= @worker.website

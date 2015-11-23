@@ -1,31 +1,33 @@
 %hmtl
   %head
-    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'mailer'
   %body
     %table.row
       %tr
         %td.brand
           %img.logo{ src: "http://i.imgur.com/EyE4aag.png" }
           .company-name
-            Harbor Green Group - Gateway Logistics
+            Harbor Green Group - Gateway Logistics*
       %tr
         %td.nav-links
           %a.nav-link{ href: "http://www.harborgreengroup.com" } Harbor Web
-          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/grain" } Grain
-          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/gateway" } Gateway
-          %a.nav-link{ href: "http://www.harborgreengroup.com/companies/recycle" } Recycle
+          %a.nav-link{ href: "http://harborgreengrain.com" } Grain
+          %a.nav-link{ href: "http://www.gatewaylogisticsllc.com" } Gateway
+          %a.nav-link{ href: "http://www.harborgreen.com" } Recycle
       %tr
         %td.contents
           = yield
       %tr
         %td.footer
-          .prompt need more assistance? contact our agents...
+          .prompt need more assistance? contact our sales department...
           .infos
-            %span.info Mel Dones
-            %span.info 7300 Alondra BLVD #200
-            %span.info Paramount, CA 90723
+            %span.info Maxx Liu
+            %span.info 19100 S. Susana Rd
+            %span.info Compton, CA 90221
             %span.info Mobile (424) 381 3254
             %span.info Office  (424) 731 9679
+          .afterthought *Future services: Pick and Pack, Domestics Cargo Planning/domestics routing, Transhipment
+          .afterthought **We are not a forwarder or agent of any logistics company, but only local service provider
       %tr
         %td.copyright
           Gateway Logistics LLC., copyright 2015

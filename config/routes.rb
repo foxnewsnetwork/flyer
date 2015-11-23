@@ -53,4 +53,18 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  namespace :gateway do
+    get "marketing"
+  end
+
+  namespace :cards do
+    get "terri"
+    get "rafael"
+    get "tom"
+    get "tom2"
+  end
+
+  namespace :passport do
+    get "pics"
+  end
 end

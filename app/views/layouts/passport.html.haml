@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Passport Pics
+    = stylesheet_link_tag 'passport', media: 'all'
+    = csrf_meta_tags
+  %body
+    .paper.container
+      - 5.times do
+        .row
+          = yield
